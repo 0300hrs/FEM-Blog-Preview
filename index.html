@@ -26,120 +26,127 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       :root {
-        --ylw: #f5d04e;
-        --white: hsl(0, 0%, 100%);
-        --grey: hsl(0, 0%, 50%);
-        --black: hsl(0, 0%, 7%);
-      }
-      body {
-        margin: 0;
-        padding: 0;
-        background-color: var(--ylw);
-        color: var(--grey);
-        font-size: 16px;
-        font-family: "Figtree", sans-serif;
-      }
+  --ylw: #f5d04e;
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
 
-      .container {
-        width: 100vw;
-        height: 90vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+@media screen and (min-width: 375px) {
+  .card {
+    width: 80%;
+  }
+}
 
-      .card {
-        width: 350px;
-        height: 500px;
-        padding: 15px 5px;
-        border: 2px solid var(--black);
-        border-radius: 20px;
-        background-color: var(--white);
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: column;
-        box-shadow: 5px 5px var(--black);
-      }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--ylw);
+  color: var(--grey);
+  font-size: 16px;
+  font-family: "Figtree", sans-serif;
+}
 
-      .card:hover {
-        cursor: pointer;
-        box-shadow: 10px 10px var(--black);
-      }
+.container {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-      .card:hover .head-text {
-        color: var(--ylw);
-      }
+.card {
+  width: 320px;
+  padding: 20px 5px;
+  border: 2px solid var(--black);
+  border-radius: 20px;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  box-shadow: 5px 5px var(--black);
+}
 
-      .imgc {
-        border-radius: 16px;
-        width: 90%;
-        height: 200px;
-        overflow: hidden;
-      }
+.card:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px var(--black);
+}
 
-      .img {
-        border-radius: 15px;
-        width: 100%;
-      }
+.card:hover .head-text {
+  color: var(--ylw);
+}
 
-      .text-body {
-        width: 90%;
-      }
+.imgc {
+  border-radius: 16px;
+  width: 90%;
+  height: 200px;
+  overflow: hidden;
+}
 
-      .pre-text {
-        border-radius: 3px;
-        font-size: 14px;
-        font-weight: bold;
-        padding: 5px 8px;
-        background-color: var(--ylw);
-        color: var(--black);
-      }
+.img {
+  border-radius: 15px;
+  width: 100%;
+}
 
-      .date-text {
-        display: block;
-        color: var(--black);
-        padding-top: 15px;
-        font-size: 14px;
-      }
+.text-body {
+  width: 90%;
+}
 
-      .head-text {
-        color: var(--black);
-        font-size: 24px;
-      }
+.pre-text {
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 8px;
+  background-color: var(--ylw);
+  color: var(--black);
+}
 
-      .body-text {
-        line-height: 25px;
-      }
+.date-text {
+  display: block;
+  color: var(--black);
+  padding-top: 15px;
+  font-size: 14px;
+}
 
-      .author {
-        display: flex;
-        width: 90%;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-      }
+.head-text {
+  color: var(--black);
+  font-size: 24px;
+}
 
-      .author-img {
-        width: 35px;
-        aspect-ratio: 1/1;
-        padding-right: 10px;
-      }
+.body-text {
+  line-height: 25px;
+}
 
-      .author-name {
-        font-size: 14px;
-        font-weight: 800;
-        color: var(--black);
-      }
+.author {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
 
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
+.author-img {
+  width: 35px;
+  aspect-ratio: 1/1;
+  padding-right: 10px;
+}
 
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
+.author-name {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--black);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
     </style>
   </head>
   <body>
